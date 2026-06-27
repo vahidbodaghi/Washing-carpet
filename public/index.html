@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şahin Halı Yıkama</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/logo.png"
+      class="rounded-full"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+    <body class="bg-white text-violet-950 antialiased">
+      <!-- Loader -->
+      <!-- <div id="loader" class="loader-wrap">
+        <div class="flex flex-col items-center gap-4">
+          <div
+            class="w-14 h-14 rounded-full border-4 border-violet-200 border-t-violet-600 animate-spin"
+          ></div>
+          <p
+            class="font-display text-sm tracking-widest text-violet-600 uppercase"
+          >
+            Yükleniyor
+          </p>
+        </div>
+      </div>  -->
+
+      <!-- NAVBAR -->
+      <header
+        id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500"
+      >
+        <nav
+          class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between py-4"
+        >
+          <a
+            href="#home"
+            class="flex items-center gap-2 font-display font-extrabold text-xl"
+          >
+            <span
+              class="w-10 h-10 bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-violet-300/50 rounded-full"
+            >
+              <img src="images/logo.png" alt="" class="rounded-full" />
+            </span>
+            <span id="logoText" class="text-white"
+              >Şahin <span class="gradient-text"> Halı </span> Yıkama</span
+            >
+          </a>
+
+          <ul
+            class="hidden lg:flex items-center gap-9 font-display font-semibold text-sm text-white opacity-90"
+          >
+            <li><a href="#home" class="nav-link">Anasayfa</a></li>
+            <li><a href="#services" class="nav-link">Hizmetler</a></li>
+            <li><a href="#gallery" class="nav-link">Galeri</a></li>
+            <li><a href="#reviews" class="nav-link">Yorumlar</a></li>
+            <li><a href="#contact" class="nav-link">İletişim</a></li>
+          </ul>
+
+          <div class="hidden lg:flex items-center gap-3">
+            <a
+              href="tel:+905395167171"
+              class="flex items-center gap-2 px-5 py-2.5 rounded-full font-display font-bold text-sm text-white bg-gradient-to-r from-violet-600 to-blue-600 shadow-lg shadow-violet-300/50 hover:shadow-violet-400/60 hover:scale-105 transition-all"
+            >
+              <i class="fa-solid fa-phone"></i>
+              Hemen Ara
+            </a>
+          </div>
+
+          <button
+            id="menuBtn"
+            class="lg:hidden w-11 h-11 rounded-xl glass flex items-center justify-center text-violet-950 shadow"
+          >
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div
+          id="mobileMenu"
+          class="lg:hidden hidden glass mx-4 mt-2 rounded-3xl shadow-2xl p-6 flex flex-col gap-5 font-display font-semibold text-violet-950"
+        >
+          <a href="#home" class="mobile-link">Anasayfa</a>
+          <a href="#services" class="mobile-link">Hizmetler</a>
+          <a href="#gallery" class="mobile-link">Galeri</a>
+          <a href="#reviews" class="mobile-link">Yorumlar</a>
+          <a href="#contact" class="mobile-link">İletişim</a>
+          <a
+            href="tel:+905001234567"
+            class="text-center px-5 py-3 rounded-full text-white bg-gradient-to-r from-violet-600 to-blue-600 shadow-lg"
+          >
+            <i class="fa-solid fa-phone"></i> Hemen Ara
+          </a>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section
+        id="home"
+        class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden"
+      >
+        <div id="parallaxBg" class="absolute inset-0 -z-20">
+          <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2000&auto=format&fit=crop"
+            alt="Profesyonel halı yıkama hizmeti İstanbul"
+            class="w-full h-[120%] object-cover"
+          />
+          <div
+            class="absolute inset-0 gradient-bg-animated opacity-90 mix-blend-multiply"
+          ></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full relative z-10">
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span
+                data-animate="fade-up"
+                class="inline-flex items-center gap-2 glass-dark text-white px-4 py-2 rounded-full text-xs font-display font-bold tracking-wide uppercase mb-6"
+              >
+                <i class="fa-solid fa-star text-yellow-300"></i> İstanbul'un #1
+                Halı Yıkama Hizmeti
+              </span>
+              <h1
+                data-animate="fade-up"
+                class="stagger-1 font-display font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.08] mb-6"
+              >
+                Halınız Bizde,<br /><span
+                  class="bg-gradient-to-r from-violet-300 via-white to-blue-300 bg-clip-text text-transparent"
+                  >Tertemiz</span
+                >
+                Evde
+              </h1>
+              <p
+                data-animate="fade-up"
+                class="stagger-2 text-violet-100 text-lg max-w-xl mb-9 leading-relaxed"
+              >
+                İstanbul'un tüm ilçelerinde kapınızdan ücretsiz alıyor,
+                fabrikamızda hijyenik şartlarda yıkıyor ve aynı hafta içinde
+                geri teslim ediyoruz. Her türlü halı, perde ve battaniye
+                temizliğinde premium kalite.
+              </p>
+              <div
+                data-animate="fade-up"
+                class="stagger-3 flex flex-wrap gap-4 mb-12"
+              >
+                <a
+                  href="tel:+905395167171"
+                  class="flex items-center gap-3 px-7 py-4 rounded-2xl font-display font-bold text-violet-950 bg-white shadow-2xl hover:scale-105 hover:shadow-violet-400/40 transition-all"
+                >
+                  <i class="fa-solid fa-phone text-violet-600"></i> 0539 516 71
+                  71
+                </a>
+                <a
+                  href="https://wa.me/905395167171"
+                  target="_blank"
+                  class="flex items-center gap-3 px-7 py-4 rounded-2xl font-display font-bold text-white bg-[#25D366] shadow-2xl hover:scale-105 transition-all"
+                >
+                  <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp'tan Yaz
+                </a>
+              </div>
+
+              <div
+                data-animate="fade-up"
+                class="stagger-4 grid grid-cols-3 gap-4 max-w-lg"
+              >
+                <div class="glass-dark rounded-2xl p-4 text-center text-white">
+                  <p class="font-display font-extrabold text-3xl">
+                    <span class="counter" data-target="12500">0</span>+
+                  </p>
+                  <p class="text-xs text-violet-100 mt-1">Temizlenen Halı</p>
+                </div>
+                <div class="glass-dark rounded-2xl p-4 text-center text-white">
+                  <p class="font-display font-extrabold text-3xl">
+                    <span class="counter" data-target="9">0</span> Yıl
+                  </p>
+                  <p class="text-xs text-violet-100 mt-1">Sektör Tecrübesi</p>
+                </div>
+                <div class="glass-dark rounded-2xl p-4 text-center text-white">
+                  <p class="font-display font-extrabold text-3xl">
+                    <span class="counter" data-target="98">0</span>%
+                  </p>
+                  <p class="text-xs text-violet-100 mt-1">Memnuniyet</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-animate="scale-up"
+              class="stagger-3 hidden lg:block relative"
+            >
+              <div
+                class="absolute -top-8 -left-8 w-40 h-40 bg-violet-400/30 rounded-full blur-3xl"
+              ></div>
+              <div
+                class="absolute -bottom-8 -right-8 w-52 h-52 bg-blue-400/30 rounded-full blur-3xl"
+              ></div>
+              <div
+                class="glass rounded-[2.5rem] p-3 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=1200&auto=format&fit=crop"
+                  alt="Halı yıkama öncesi sonrası"
+                  class="rounded-[2rem] w-full h-[460px] object-cover"
+                />
+              </div>
+              <div
+                class="absolute -bottom-6 -left-10 glass rounded-2xl px-5 py-4 shadow-xl flex items-center gap-3 animate-float"
+              >
+                <span
+                  class="w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white"
+                  ><i class="fa-solid fa-truck-fast"></i
+                ></span>
+                <div>
+                  <p class="font-display font-bold text-sm text-violet-950">
+                    Aynı Gün Alım
+                  </p>
+                  <p class="text-xs text-violet-500">Kapınızdan ücretsiz</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-white/70 animate-bounce"
+        >
+          <i class="fa-solid fa-chevron-down text-xl"></i>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="py-24 lg:py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Hizmetlerimiz</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3 leading-tight"
+            >
+              Evinizin Her Köşesi İçin
+              <span class="gradient-text">Profesyonel Bakım</span>
+            </h2>
+            <p class="text-violet-500/80 mt-4">
+              Modern makine parkurumuz ve uzman ekibimizle her tekstil yüzeyine
+              özel temizlik çözümleri sunuyoruz.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              data-animate="fade-up"
+              class="stagger-1 service-card rounded-3xl overflow-hidden shadow-lg shadow-violet-100 border border-violet-100/60"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600166898405-da9535204843?q=80&w=900&auto=format&fit=crop"
+                  alt="Halı yıkama"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-7">
+                <span
+                  class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white mb-4 -mt-14 relative shadow-lg"
+                  ><i class="fa-solid fa-rug"></i
+                ></span>
+                <h3 class="font-display font-bold text-lg mb-2">Halı Yıkama</h3>
+                <p class="text-sm text-violet-500/80 leading-relaxed">
+                  Derin yıkama teknolojisiyle halılarınızdaki toz akarı, kir ve
+                  alerjenleri kökünden temizliyoruz.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-animate="fade-up"
+              class="stagger-2 service-card rounded-3xl overflow-hidden shadow-lg shadow-violet-100 border border-violet-100/60"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=900&auto=format&fit=crop"
+                  alt="Koltuk yıkama"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-7">
+                <span
+                  class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white mb-4 -mt-14 relative shadow-lg"
+                  ><i class="fa-solid fa-couch"></i
+                ></span>
+                <h3 class="font-display font-bold text-lg mb-2">
+                  Koltuk Yıkama
+                </h3>
+                <p class="text-sm text-violet-500/80 leading-relaxed">
+                  Köpük ve buhar yöntemiyle kumaş dokusuna zarar vermeden
+                  koltuklarınızı arındırıyoruz.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-animate="fade-up"
+              class="stagger-3 service-card rounded-3xl overflow-hidden shadow-lg shadow-violet-100 border border-violet-100/60"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=900&auto=format&fit=crop"
+                  alt="Perde yıkama"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-7">
+                <span
+                  class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white mb-4 -mt-14 relative shadow-lg"
+                  ><i class="fa-solid fa-window-maximize"></i
+                ></span>
+                <h3 class="font-display font-bold text-lg mb-2">
+                  Perde Yıkama
+                </h3>
+                <p class="text-sm text-violet-500/80 leading-relaxed">
+                  Sökme, yıkama ve ütüleme dahil komple perde bakım hizmeti,
+                  yerinde montaj seçeneğiyle.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-animate="fade-up"
+              class="stagger-1 service-card rounded-3xl overflow-hidden shadow-lg shadow-violet-100 border border-violet-100/60"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop"
+                  alt="Yatak yıkama"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-7">
+                <span
+                  class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white mb-4 -mt-14 relative shadow-lg"
+                  ><i class="fa-solid fa-bed"></i
+                ></span>
+                <h3 class="font-display font-bold text-lg mb-2">
+                  Yatak Yıkama
+                </h3>
+                <p class="text-sm text-violet-500/80 leading-relaxed">
+                  UV dezenfeksiyon destekli yatak yıkama ile sağlıklı bir uykuya
+                  merhaba deyin.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-animate="fade-up"
+              class="stagger-2 service-card rounded-3xl overflow-hidden shadow-lg shadow-violet-100 border border-violet-100/60"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=900&auto=format&fit=crop"
+                  alt="Leke çıkarma"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-7">
+                <span
+                  class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white mb-4 -mt-14 relative shadow-lg"
+                  ><i class="fa-solid fa-spray-can-sparkles"></i
+                ></span>
+                <h3 class="font-display font-bold text-lg mb-2">
+                  Leke Çıkarma
+                </h3>
+                <p class="text-sm text-violet-500/80 leading-relaxed">
+                  Kahve, şarap, yağ gibi inatçı lekelere özel formüllerle anında
+                  müdahale.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-animate="fade-up"
+              class="stagger-3 service-card rounded-3xl overflow-hidden bg-gradient-to-br from-violet-600 to-blue-600 text-white shadow-xl shadow-violet-300/50 flex flex-col justify-center items-center p-7 text-center"
+            >
+              <i class="fa-solid fa-headset text-4xl mb-4"></i>
+              <h3 class="font-display font-bold text-lg mb-2">
+                Aklınıza Takılan Bir Şey mi Var?
+              </h3>
+              <p class="text-sm text-violet-100 mb-5">
+                Size özel fiyat teklifi için hemen bizi arayın.
+              </p>
+              <a
+                href="tel:+905395167171"
+                class="px-5 py-2.5 rounded-full bg-white text-violet-700 font-display font-bold text-sm hover:scale-105 transition-all"
+                >Hemen Ara</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section
+        class="py-24 lg:py-32 bg-gradient-to-b from-violet-50/60 to-white"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Neden Biz</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Güvenle Tercih Edilen
+              <span class="gradient-text">Çözüm Ortağınız</span>
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 *:text-white">
+            <div
+              data-animate="fade-up"
+              class="stagger-1 glass rounded-3xl p-7 text-center shadow-lg hover:shadow-violet-200 transition-shadow"
+            >
+              <div
+                class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white text-2xl mb-5"
+              >
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <h3 class="font-display font-bold mb-2">
+                Ücretsiz Alım & Teslimat
+              </h3>
+              <p class="text-sm text-black">
+                İstanbul içi tüm bölgelerde kapınızdan alıp kapınıza teslim
+                ediyoruz.
+              </p>
+            </div>
+            <div
+              data-animate="fade-up"
+              class="stagger-2 glass rounded-3xl p-7 text-center shadow-lg hover:shadow-violet-200 transition-shadow"
+            >
+              <div
+                class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white text-2xl mb-5"
+              >
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h3 class="font-display font-bold mb-2">Doğa Dostu Ürünler</h3>
+              <p class="text-sm text-black">
+                Çocuk ve evcil hayvan dostu, biyolojik olarak çözünebilen
+                deterjanlar.
+              </p>
+            </div>
+            <div
+              data-animate="fade-up"
+              class="stagger-3 glass rounded-3xl p-7 text-center shadow-lg hover:shadow-violet-200 transition-shadow"
+            >
+              <div
+                class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white text-2xl mb-5"
+              >
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <h3 class="font-display font-bold mb-2">Hızlı Teslim Süresi</h3>
+              <p class="text-sm text-black">
+                Standart siparişlerde 24-48 saat içinde kurutma ve teslimat
+                garantisi.
+              </p>
+            </div>
+            <div
+              data-animate="fade-up"
+              class="stagger-4 glass rounded-3xl p-7 text-center shadow-lg hover:shadow-violet-200 transition-shadow"
+            >
+              <div
+                class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center text-white text-2xl mb-5"
+              >
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="font-display font-bold mb-2">Memnuniyet Garantisi</h3>
+              <p class="text-sm text-black">
+                Sonuçtan memnun kalmazsanız ücretsiz tekrar yıkama hizmeti
+                sunuyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEFORE & AFTER GALLERY -->
+      <section id="gallery" class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Öncesi & Sonrası</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Gözlerinize <span class="gradient-text">İnanamayacaksınız</span>
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div
+              data-animate="scale-up"
+              class="stagger-1 ba-card rounded-3xl h-72 shadow-lg"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=700&auto=format&fit=crop"
+                class="w-full h-full object-cover rounded-3xl"
+                alt="Halı temizliği örneği"
+              />
+              <div class="ba-overlay rounded-3xl flex items-end p-5">
+                <p class="text-white font-display font-bold">Salon Halısı</p>
+              </div>
+            </div>
+            <div
+              data-animate="scale-up"
+              class="stagger-2 ba-card rounded-3xl h-72 shadow-lg"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=700&auto=format&fit=crop"
+                class="w-full h-full object-cover rounded-3xl"
+                alt="Koltuk temizliği örneği"
+              />
+              <div class="ba-overlay rounded-3xl flex items-end p-5">
+                <p class="text-white font-display font-bold">Kumaş Koltuk</p>
+              </div>
+            </div>
+            <div
+              data-animate="scale-up"
+              class="stagger-3 ba-card rounded-3xl h-72 shadow-lg"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=700&auto=format&fit=crop"
+                class="w-full h-full object-cover rounded-3xl"
+                alt="Yatak temizliği örneği"
+              />
+              <div class="ba-overlay rounded-3xl flex items-end p-5">
+                <p class="text-white font-display font-bold">Yatak Yüzeyi</p>
+              </div>
+            </div>
+            <div
+              data-animate="scale-up"
+              class="stagger-4 ba-card rounded-3xl h-72 shadow-lg"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=700&auto=format&fit=crop"
+                class="w-full h-full object-cover rounded-3xl"
+                alt="Perde temizliği örneği"
+              />
+              <div class="ba-overlay rounded-3xl flex items-end p-5">
+                <p class="text-white font-display font-bold">Tül Perde</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS TIMELINE -->
+      <section
+        class="py-24 lg:py-32 bg-gradient-to-b from-white to-violet-50/60 relative overflow-hidden"
+      >
+        <div class="max-w-5xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-20"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Süreç</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Kapınızdan Kapınıza <span class="gradient-text">5 Adımda</span>
+            </h2>
+          </div>
+
+          <div class="relative">
+            <div
+              class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 timeline-line rounded-full -translate-x-1/2"
+            ></div>
+
+            <div class="space-y-12 md:space-y-0">
+              <div
+                data-animate="slide-right"
+                class="md:grid md:grid-cols-2 md:gap-10 items-center mb-12 md:mb-16"
+              >
+                <div class="md:text-right">
+                  <div
+                    class="glass inline-block md:block rounded-3xl p-6 shadow-lg"
+                  >
+                    <span
+                      class="font-display text-xs font-bold text-gray-100 uppercase"
+                      >Adım 1</span
+                    >
+                    <h3 class="font-display font-bold text-xl mt-1 mb-2 text-black">
+                      Randevu & Alım
+                    </h3>
+                    <p class="text-sm text-white">
+                      Telefon veya WhatsApp'tan randevu oluşturun, ekibimiz
+                      kapınızdan ücretsiz alır.
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden md:flex justify-start">
+                  <span
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center shadow-lg -ml-7"
+                    ><i class="fa-solid fa-calendar-check"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div
+                data-animate="slide-left"
+                class="md:grid md:grid-cols-2 md:gap-10 items-center mb-12 md:mb-16"
+              >
+                <div class="hidden md:flex justify-end">
+                  <span
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center shadow-lg -mr-7 order-2"
+                  ></span>
+                </div>
+                <div class="md:col-start-2">
+                  <div
+                    class="glass inline-block md:block rounded-3xl p-6 shadow-lg"
+                  >
+                    <span
+                      class="font-display text-xs font-bold text-gray-100 uppercase"
+                      >Adım 2</span
+                    >
+                    <h3 class="font-display font-bold text-xl mt-1 mb-2 text-black">
+                      Detaylı Yıkama
+                    </h3>
+                    <p class="text-sm text-white">
+                      Fabrikamızda derinlemesine toz alma ve özel şampuanla
+                      yıkama uygulanır.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-animate="slide-right"
+                class="md:grid md:grid-cols-2 md:gap-10 items-center mb-12 md:mb-16"
+              >
+                <div class="md:text-right">
+                  <div
+                    class="glass inline-block md:block rounded-3xl p-6 shadow-lg"
+                  >
+                    <span
+                      class="font-display text-xs font-bold text-gray-100 uppercase"
+                      >Adım 3</span
+                    >
+                    <h3 class="font-display font-bold text-xl mt-1 mb-2 text-black">
+                      Hijyenik Kurutma
+                    </h3>
+                    <p class="text-sm text-white">
+                      Özel kurutma sistemlerinde nem ve koku bırakmadan tam
+                      kuruma sağlanır.
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden md:flex justify-start">
+                  <span
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center shadow-lg -ml-7"
+                    ><i class="fa-solid fa-wind"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div
+                data-animate="slide-left"
+                class="md:grid md:grid-cols-2 md:gap-10 items-center mb-12 md:mb-16"
+              >
+                <div class="hidden md:flex justify-end">
+                  <span
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center shadow-lg -mr-7"
+                  ></span>
+                </div>
+                <div class="md:col-start-2">
+                  <div
+                    class="glass inline-block md:block rounded-3xl p-6 shadow-lg"
+                  >
+                    <span
+                      class="font-display text-xs font-bold text-violet-400 uppercase"
+                      >Adım 4</span
+                    >
+                    <h3 class="font-display font-bold text-xl mt-1 mb-2 text-black">
+                      Kalite Kontrolü
+                    </h3>
+                    <p class="text-sm text-white">
+                      Her ürün, teslim öncesi uzman ekibimiz tarafından detaylı
+                      kontrolden geçer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-animate="slide-right"
+                class="md:grid md:grid-cols-2 md:gap-10 items-center"
+              >
+                <div class="md:text-right">
+                  <div
+                    class="glass inline-block md:block rounded-3xl p-6 shadow-lg"
+                  >
+                    <span
+                      class="font-display text-xs font-bold text-violet-400 uppercase"
+                      >Adım 5</span
+                    >
+                    <h3 class="font-display font-bold text-xl mt-1 mb-2 text-black">
+                      Kapınıza Teslimat
+                    </h3>
+                    <p class="text-sm text-white">
+                      Tertemiz ürünleriniz, belirlediğiniz tarihte kapınıza
+                      özenle teslim edilir.
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden md:flex justify-start">
+                  <span
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center shadow-lg -ml-7"
+                    ><i class="fa-solid fa-box-open"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="reviews" class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Müşteri Yorumları</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Bizi <span class="gradient-text">Tercih Edenler</span> Ne Diyor?
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              data-animate="fade-up"
+              class="stagger-1 rounded-3xl p-7 border border-violet-100 shadow-lg shadow-violet-100/50 bg-gradient-to-b from-violet-50/40 to-white"
+            >
+              <div class="flex gap-1 mb-4 star">★★★★★</div>
+              <p class="text-violet-700/90 text-sm leading-relaxed mb-5">
+                "Halılarımız sanki yeni alınmış gibi geldi. Hem alım hem
+                teslimat tam zamanında oldu, çok memnun kaldım."
+              </p>
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center font-bold"
+                  >E</span
+                >
+                <div>
+                  <p class="font-display font-bold text-sm">Elif Kaya</p>
+                  <p class="text-xs text-violet-400">Kadıköy</p>
+                </div>
+              </div>
+            </div>
+            <div
+              data-animate="fade-up"
+              class="stagger-2 rounded-3xl p-7 border border-violet-100 shadow-lg shadow-violet-100/50 bg-gradient-to-b from-violet-50/40 to-white"
+            >
+              <div class="flex gap-1 mb-4 star">★★★★★</div>
+              <p class="text-violet-700/90 text-sm leading-relaxed mb-5">
+                "Koltuklarımızdaki kahve lekeleri tamamen çıktı. Fiyatı da gayet
+                uygun, kesinlikle tekrar tercih ederim."
+              </p>
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center font-bold"
+                  >M</span
+                >
+                <div>
+                  <p class="font-display font-bold text-sm">Mehmet Yıldız</p>
+                  <p class="text-xs text-violet-400">Üsküdar</p>
+                </div>
+              </div>
+            </div>
+            <div
+              data-animate="fade-up"
+              class="stagger-3 rounded-3xl p-7 border border-violet-100 shadow-lg shadow-violet-100/50 bg-gradient-to-b from-violet-50/40 to-white"
+            >
+              <div class="flex gap-1 mb-4 star">★★★★★</div>
+              <p class="text-violet-700/90 text-sm leading-relaxed mb-5">
+                "Bebeğim olduğu için kimyasal kullanımına dikkat ediyordum, çok
+                ilgili davrandılar. Sonuçtan çok mutluyuz."
+              </p>
+              <div class="flex items-center gap-3">
+                <span
+                  class="w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center font-bold"
+                  >A</span
+                >
+                <div>
+                  <p class="font-display font-bold text-sm">Ayşe Demir</p>
+                  <p class="text-xs text-violet-400">Beşiktaş</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE AREAS -->
+      <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+          <span
+            class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+            data-animate="fade-up"
+            >Hizmet Bölgeleri</span
+          >
+          <h2
+            class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3 mb-10"
+            data-animate="fade-up"
+          >
+            İstanbul'un <span class="gradient-text">Her İlçesindeyiz</span>
+          </h2>
+
+          <div
+            data-animate="fade-up"
+            class="stagger-1 flex flex-wrap justify-center gap-3"
+          >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Kadıköy</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Üsküdar</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Beşiktaş</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Şişli</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Beylikdüzü</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Maltepe</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Ataşehir</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Bahçelievler</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Pendik</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Bağcılar</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Sarıyer</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Avcılar</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Esenyurt</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >Başakşehir</span
+            >
+            <span
+              class="district-chip glass px-5 py-2.5 rounded-full text-sm font-display font-semibold shadow-sm cursor-default"
+              >+ Diğer Tüm İlçeler</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        class="py-24 lg:py-32 bg-gradient-to-b from-violet-50/60 to-white"
+      >
+        <div class="max-w-3xl mx-auto px-6 lg:px-10">
+          <div class="text-center mb-14" data-animate="fade-up">
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >Sıkça Sorulanlar</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Merak Ettikleriniz
+            </h2>
+          </div>
+
+          <div class="space-y-4" id="faqContainer">
+            <div
+              class="faq-item glass rounded-2xl overflow-hidden shadow-sm"
+              data-animate="fade-up"
+            >
+              <button
+                class="faq-btn w-full flex items-center justify-between p-6 text-left font-display font-bold"
+              >
+                <span>Halılarım ne kadar sürede teslim edilir?</span>
+                <i
+                  class="fa-solid fa-plus text-violet-600 transition-transform"
+                ></i>
+              </button>
+              <div class="accordion-content px-6">
+                <p class="text-sm text-violet-500/80 pb-6">
+                  Standart siparişler en geç 1 hafta içinde teslim edilir.
+                  Randevu sırasında kesin teslim tarihi size bildirilir.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item glass rounded-2xl overflow-hidden shadow-sm"
+              data-animate="fade-up"
+            >
+              <button
+                class="faq-btn w-full flex items-center justify-between p-6 text-left font-display font-bold"
+              >
+                <span>Alım ve teslimat ücretli mi?</span>
+                <i
+                  class="fa-solid fa-plus text-violet-600 transition-transform"
+                ></i>
+              </button>
+              <div class="accordion-content px-6">
+                <p class="text-sm text-violet-500/80 pb-6">
+                  İstanbul'un tüm ilçelerinde kapınızdan alım ve teslimat
+                  tamamen ücretsizdir, ek bir ulaşım bedeli talep edilmez.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item glass rounded-2xl overflow-hidden shadow-sm"
+              data-animate="fade-up"
+            >
+              <button
+                class="faq-btn w-full flex items-center justify-between p-6 text-left font-display font-bold"
+              >
+                <span
+                  >Kullandığınız ürünler evcil hayvanlar için güvenli mi?</span
+                >
+                <i
+                  class="fa-solid fa-plus text-violet-600 transition-transform"
+                ></i>
+              </button>
+              <div class="accordion-content px-6">
+                <p class="text-sm text-violet-500/80 pb-6">
+                  Evet, kullandığımız tüm temizlik ürünleri biyolojik olarak
+                  çözünebilir ve hem çocuklar hem de evcil hayvanlar için
+                  güvenlidir.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item glass rounded-2xl overflow-hidden shadow-sm"
+              data-animate="fade-up"
+            >
+              <button
+                class="faq-btn w-full flex items-center justify-between p-6 text-left font-display font-bold"
+              >
+                <span>İnatçı lekeleri tamamen çıkarabiliyor musunuz?</span>
+                <i
+                  class="fa-solid fa-plus text-violet-600 transition-transform"
+                ></i>
+              </button>
+              <div class="accordion-content px-6">
+                <p class="text-sm text-violet-500/80 pb-6">
+                  Çoğu leke türünü (kahve, şarap, yağ, çamur) yüksek oranda
+                  gideriyoruz. Lekenin yaşına ve dokuya bağlı olarak sonuç
+                  değişebilir, kesin değerlendirme için fotoğraf üzerinden ön
+                  inceleme yapabiliriz.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="faq-item glass rounded-2xl overflow-hidden shadow-sm"
+              data-animate="fade-up"
+            >
+              <button
+                class="faq-btn w-full flex items-center justify-between p-6 text-left font-display font-bold"
+              >
+                <span>Ödeme nasıl yapılıyor?</span>
+                <i
+                  class="fa-solid fa-plus text-violet-600 transition-transform"
+                ></i>
+              </button>
+              <div class="accordion-content px-6">
+                <p class="text-sm text-violet-500/80 pb-6">
+                  Teslimat sırasında nakit veya kredi kartı ile ödeme
+                  yapabilirsiniz. Kurumsal müşterilerimiz için faturalı ödeme
+                  seçeneği de mevcuttur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="py-24 lg:py-32 bg-white relative overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16"
+            data-animate="fade-up"
+          >
+            <span
+              class="font-display font-bold text-sm uppercase tracking-widest gradient-text"
+              >İletişim</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mt-3"
+            >
+              Hemen <span class="gradient-text">Randevu Alın</span>
+            </h2>
+            <p class="text-violet-500/80 mt-4">
+              Size en yakın zamanda dönüş yapalım, halılarınızı bugün alalım.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-10">
+            <div data-animate="slide-right" class="space-y-5">
+              <div
+                class="glass rounded-3xl p-6 flex items-center gap-5 shadow-sm"
+              >
+                <span
+                  class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center text-xl shrink-0"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <div>
+                  <p class="font-display font-bold">Telefon</p>
+                  <a
+                    href="tel:+905395167171"
+                    class="text-violet-500 text-sm hover:underline"
+                    >0539 516 7171</a
+                  >
+                </div>
+              </div>
+              <div
+                class="glass rounded-3xl p-6 flex items-center gap-5 shadow-sm"
+              >
+                <span
+                  class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center text-xl shrink-0"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></span>
+                <div>
+                  <p class="font-display font-bold">WhatsApp</p>
+                  <a
+                    href="https://wa.me/905395167171"
+                    target="_blank"
+                    class="text-violet-500 text-sm hover:underline"
+                    >0539 516 7171</a
+                  >
+                </div>
+              </div>
+              <div
+                class="glass rounded-3xl p-6 flex items-center gap-5 shadow-sm"
+              >
+                <span
+                  class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center text-xl shrink-0"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <div>
+                  <p class="font-display font-bold">E-posta</p>
+                  <a
+                    href="mailto:ŞahinHalıYıkama@gmail.com"
+                    class="text-violet-500 text-sm hover:underline"
+                    >ŞahinHalıYıkama@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div
+                class="glass rounded-3xl p-6 flex items-center gap-5 shadow-sm"
+              >
+                <span
+                  class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-600 text-white flex items-center justify-center text-xl shrink-0"
+                  ><i class="fa-solid fa-clock"></i
+                ></span>
+                <div>
+                  <p class="font-display font-bold">Çalışma Saatleri</p>
+                  <p class="text-violet-500 text-sm">Her gün 08:00 - 19:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-animate="slide-left"
+              class="rounded-3xl overflow-hidden shadow-xl border border-violet-100 h-[420px] lg:h-auto"
+            >
+              <iframe
+                src="https://www.google.com/maps?q=Şahin%20Halı%20Yıkama%20Bayrampaşa&output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0; min-height: 420px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="İstanbul Google Harita"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="bg-violet-950 text-violet-200 pt-16 pb-8 relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 gradient-bg-animated opacity-20 -z-10"
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-violet-800/60"
+          >
+            <div>
+              <a
+                href="#home"
+                class="flex items-center gap-2 font-display font-extrabold text-xl text-white mb-4"
+              >
+                <span
+                  class="w-9 h-9 rounded-full bg-gradient-to-br from-violet-600 to-blue-600 flex items-center justify-center"
+                  ><img src="images/logo.png" alt="" class="rounded-full"
+                /></span>
+                Şahin<span class="text-blue-300">Halı </span> Yıkama
+              </a>
+              <p class="text-sm text-violet-300/80 leading-relaxed">
+                7 yıllık tecrübemizle İstanbul'un her ilçesinde premium halı,
+                koltuk, perde ve yatak yıkama hizmeti sunuyoruz.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white mb-4">
+                Hızlı Bağlantılar
+              </h4>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a href="#home" class="hover:text-white transition-colors"
+                    >Anasayfa</a
+                  >
+                </li>
+                <li>
+                  <a href="#services" class="hover:text-white transition-colors"
+                    >Hizmetler</a
+                  >
+                </li>
+                <li>
+                  <a href="#gallery" class="hover:text-white transition-colors"
+                    >Galeri</a
+                  >
+                </li>
+                <li>
+                  <a href="#reviews" class="hover:text-white transition-colors"
+                    >Yorumlar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white mb-4">Hizmetler</h4>
+              <ul class="space-y-2 text-sm">
+                <li>Halı Yıkama</li>
+                <li>Koltuk Yıkama</li>
+                <li>Perde Yıkama</li>
+                <li>Yatak Yıkama</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white mb-4">
+                Bizi Takip Edin
+              </h4>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full glass-dark flex items-center justify-center hover:bg-white/20 transition-colors"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full glass-dark flex items-center justify-center hover:bg-white/20 transition-colors"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full glass-dark flex items-center justify-center hover:bg-white/20 transition-colors"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs text-violet-400 pt-6">
+            © 2026 Şahin Halı Yıkama. Tüm hakları saklıdır.
+          </p>
+        </div>
+      </footer>
+
+      <!-- WHATSAPP FLOAT -->
+      <a
+        href="https://wa.me/905001234567"
+        target="_blank"
+        class="whatsapp-float fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center text-white text-2xl shadow-2xl"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+       <script src="scripts/script.js">
+       
+      </script> 
+    </body>
+
+</html>

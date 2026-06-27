@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+.font-display {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6d28d9 0%, #2563eb 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-bg-animated {
+  background: linear-gradient(120deg, #4c1d95, #1e3a8a, #6d28d9, #1e40af);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+.glass {
+  background: linear-gradient(135deg, #6d28d9 0%, #2563eb 50%, #7c3aed 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(30, 10, 60, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Scroll reveal */
+
+[data-animate="fade-up"] {
+  transform: translateY(40px);
+}
+[data-animate="fade-up"].in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate="fade-in"] {
+}
+[data-animate="fade-in"].in-view {
+  opacity: 1;
+}
+
+[data-animate="slide-left"] {
+  transform: translateX(-60px);
+}
+[data-animate="slide-left"].in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-animate="slide-right"] {
+  transform: translateX(60px);
+}
+[data-animate="slide-right"].in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-animate="scale-up"] {
+  transform: scale(0.85);
+}
+[data-animate="scale-up"].in-view {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.stagger-1 {
+  transition-delay: 0.1s;
+}
+.stagger-2 {
+  transition-delay: 0.2s;
+}
+.stagger-3 {
+  transition-delay: 0.3s;
+}
+.stagger-4 {
+  transition-delay: 0.4s;
+}
+.stagger-5 {
+  transition-delay: 0.5s;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.service-card {
+  transition:
+    transform 0.4s cubic-bezier(0.21, 0.6, 0.35, 1),
+    box-shadow 0.4s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.ba-card {
+  position: relative;
+  overflow: hidden;
+}
+.ba-card .ba-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(30, 10, 60, 0.85), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.ba-card:hover .ba-overlay {
+  opacity: 1;
+}
+.ba-card img {
+  transition: transform 0.6s ease;
+}
+.ba-card:hover img {
+  transform: scale(1.1);
+}
+
+.whatsapp-float {
+  animation: float 2.5s ease-in-out infinite;
+}
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: #25d366;
+  opacity: 0.5;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.timeline-line {
+  background: linear-gradient(180deg, #7c3aed, #2563eb);
+}
+
+.price-card {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.price-card:hover {
+  transform: translateY(-8px);
+}
+.price-featured {
+  transform: scale(1.05);
+}
+.price-featured:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.loader-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.6s ease,
+    visibility 0.6s ease;
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.district-chip {
+  transition: all 0.3s ease;
+}
+.district-chip:hover {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: white;
+}
+
+::selection {
+  background: #c4b5fd;
+}
+
+.star {
+  color: #fbbf24;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
